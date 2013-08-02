@@ -1,0 +1,27 @@
+---
+layout: default
+title: Blake Grotewold
+---
+	<div clas="col-12">
+	  <div class="header">
+	  	<img class="visible-sm img-responsive img-circle me" alt="blake grotewold" src="/assets/img/me.jpeg" />
+	    <h1 class="title">Hi I'm <a href="/">Blake Grotewold</a></h1>
+	    <span class="tagline"> {{ site.tagline }} </span>
+	  </div>
+	</div>
+
+<div class="row">
+	<div id="about" class="col-12 col-sm-7 col-lg-8">
+	  <p>
+	  	{{ site.author.bio }}
+	  </p>
+	</div>
+	<div id="posts" class="col-12 col-sm-5 col-lg-4">
+	  <h1>Blog Posts</h1>
+	  <ul class="posts">
+	    {% for post in site.posts %}
+	      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+	    {% endfor %}
+	  </ul>
+	</div>
+</div>

@@ -1,0 +1,43 @@
+permalink: /:title/
+
+title: Blake Grotewold
+tagline: Freelance Developer in Mankato, MN
+author: 
+    name: Blake Grotewold
+    bio: Hailing from northern Iowa and currently living in Mankato, MN. Blake has always had an interest for software and development. Since the first time he was introduced to HTML and CSS in junior high, he has never stopped wanting to learn new topics in the field. With a wide knowledge of many different languages, he enjoys working with mobile, data analytics, and web services. His languages of choice are Python, Objective-C, JavaScript, and Java. Feel free to contact him for quotes and availability.
+    twitter: _grotr
+    github: grotr
+    facebook: grotewold
+    linkedin: blakegrotewold
+    email: hello@blakegrotewold.com
+
+production_url : http://grotr.github.io
+
+markdown: maruku
+markdown_ext: md
+pygments: true
+
+include: ['.htaccess']
+exclude: ['README.md']
+
+JB :
+  version : 0.3.0
+
+  BASE_PATH : false
+
+  ASSET_PATH : flase
+
+  archive_path: /archive.html
+  categories_path : /categories.html
+  tags_path : /tags.html
+  atom_path : /atom.xml
+  rss_path : /rss.xml
+
+  comments :
+    provider : false
+
+  analytics :
+    provider : false
+
+  sharing :
+    provider : false
