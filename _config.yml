@@ -25,11 +25,8 @@ JB :
 
   BASE_PATH : false
 
-  ASSET_PATH : flase
+  ASSET_PATH : /assets/
 
-  archive_path: /archive.html
-  categories_path : /categories.html
-  tags_path : /tags.html
   atom_path : /atom.xml
   rss_path : /rss.xml
 

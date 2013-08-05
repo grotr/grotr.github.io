@@ -4,8 +4,12 @@
 /*
 /*****************************************************************************/
 
+<<<<<<< HEAD
 @import url(http://fonts.googleapis.com/css?family=Ubuntu);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+=======
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300);
+>>>>>>> cdf5c798b4d5e827f461d9e615b03ca7157ed797
 
 * {
   margin: 0;
