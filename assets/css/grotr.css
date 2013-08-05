@@ -5,11 +5,11 @@
 /*****************************************************************************/
 
 @import url(http://fonts.googleapis.com/css?family=Ubuntu);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
 * {
   margin: 0;
   padding: 0;
-  white-space: normal;
 }
 
 html, body {
@@ -17,22 +17,33 @@ html, body {
 }
 
 body {
-  border-top: 6px solid #415055;
+  border-top: 8px solid #649178;
   background-color: #415055;
   color: #fff;
-  white-space: nowrap;
+  font-family: "Open Sans", Arial, sans-serif;
+  min-width: 380px;
 }
 
 .me {
-  box-shadow: 0px 0px 0px 10px #649178;
+  box-shadow: 0px 0px 0px 10px #649178, 0 5px 25px #000;
   width: 200px;
   margin: 0 auto;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 a, a:visited {
   color: #5B9ECC;
 }
+
+a [class^="icon-"], a [class*=" icon-"] {
+display: inline-block;
+}
+
+#about {
+  margin-top:25px;
+  text-align: justify;
+}
+
 
 /*****************************************************************************/
 /*
@@ -41,9 +52,9 @@ a, a:visited {
 /*****************************************************************************/
 
 #navigation {
-  position: absolute;
+  position: fixed;
   left: 0px;
-  top: 0px;
+  top: 10px;
   bottom: 0px;
   vertical-align: top;
   text-align: left;
@@ -52,7 +63,8 @@ a, a:visited {
 .navitem {
   font-size: 20px;
   color: white;
-  padding: 10px 10px;
+  margin: 10px;
+  padding: 5px 0px;
   overflow: hidden;
   white-space:nowrap;
   list-style-type: none;
@@ -63,19 +75,13 @@ a, a:visited {
 }
 
 #navbar {
-  transition:width .5s;
-  -webkit-transition:width .5s; /* Safari */
-  width:150px;
+  width: 50px;
   overflow: hidden;
   padding: 0;
 }
 
 #navbar a {
   text-decoration: none;
-}
-
-#navbar.collapsed {
-  width: 50px;
 }
 
 .navitem i[class^="icon"] {
@@ -114,8 +120,7 @@ ul.posts span {
 .header {
   color: #FFF;
   text-align: left;
-  margin: 0 auto;
-  margin-top: 20px;
+  margin: 40px auto;
   text-shadow: 1px 1px 1px #283237;
   text-align: center
 }
@@ -194,17 +199,17 @@ ul.posts span {
 
 /* standard */
 
-#about {
-  margin-top:25px;
-  text-align: justify;
-}
-
 #posts {
     text-align: center;
+    font-size: 12px;
 }
 
-#posts, #posts h1{
+#posts h1{
   font-family: Garamond, serif;
+}
+
+.sections {
+  margin: -10px 0 10px 0;
 }
 
 .post {
@@ -242,26 +247,33 @@ ul.posts span {
   background-color: #333;
 }
 
+.back {
+  display: inline-block;
+  padding-top: 20px;
+  font-weight: bold;
+}
+
 .row {
   padding: 0 25px;
 }
 
 .footer {
+  padding-top:30px;
   text-align: center;
   text-shadow:1px 1px 2px black;
 }
 
 #email a {
   font-size: 22px;
-  color: #d1d1d1;
+  color: #c1cccc;
 }
 
 .logo {
   color: #fff;
   font-size: 30px;
   padding: 5px 12px;
+  width:60px;
   line-height: 40px;
-  display: block;
 }
 
 .logo:hover {
@@ -270,37 +282,4 @@ ul.posts span {
 
 #logos a {
   text-decoration: none;
-}
-
-@media(min-width: 768px) {
-
-  body {
-    background-color: #222222
-  }
-  
-  .header {
-    padding-right: 20px;
-    text-align: right;
-    text-shadow: 1px 1px 1px black;
-  }
-
-  .tagline {
-    color: #fff;
-  }
-
-  #posts {
-    text-align: right;
-  }
-
-  .container {
-    margin-top: 70px;
-    display: inline-block;
-  }
-
-  #navigation {
-    height: 100%;
-    position: relative;
-    display: inline-block;
-    background-color: #415055;
-  }
 }

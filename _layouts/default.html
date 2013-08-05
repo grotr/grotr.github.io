@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width">
         <meta name="description" content="{{ site.tagline }}">
         <meta name="keywords" content="freelance,minnesota,web,development,">
         <meta name="author" content="{{ site.author.name }}">
@@ -25,29 +25,24 @@
 
     </head>
     <body lang="en" id="">
-      <a href="https://github.com/{{ site.author.github }}/{{ site.author.github }}.github.io"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub"></a>
-      <div class="screen" id="screen" data-video="/video/fire.mp4">
-      </div>
       <div id="navigation">
         <nav id="nav"> 
           <ul id="navbar" class="collapsed">
-            <a href="javascript:void()"><li class="collapser navitem"><i class="icon-reorder"></i></li></a>
-            <a href="/"><li class="navitem"><i class="icon-home"></i>&nbsp;&nbsp;<span>Home</span></li></a>
-            <a href="/portfolio"><li class="navitem"><i class="icon-folder-open"></i>&nbsp;&nbsp;<span>Portfolio</span></li></a>
-            <a href="/resume"><li class="navitem"><i class="icon-file-text"></i>&nbsp;&nbsp;<span>Resume</span></li></a>
-            <a href="/playground"><li class="navitem"><i class="icon-beaker"></i>&nbsp;&nbsp;<span>Labs</span></li></a>
+            <a href="/"><li class="navitem" data-toggle="tooltip" data-placement="right" title="Home"><i class="icon-home"></i>&nbsp;</li></a>
+            <a href="/portfolio"><li class="navitem" data-toggle="tooltip" data-placement="right" title="Portfolio"><i class="icon-folder-open"></i>&nbsp;</li></a>
+            <a href="/cv"><li class="navitem" data-toggle="tooltip" data-placement="right" title="CV"><i class="icon-file-text"></i>&nbsp</li></a>
+            <a href="/labs"><li class="navitem" data-toggle="tooltip" data-placement="right" title="Labs"><i class="icon-beaker"></i>&nbsp;</li></a>
           </ul>
         </nav>
       </div>
         <div class="container">
-
           <div class="row">
 
                 {{ content }}
 
           </div> <!-- /row content -->
             <div class="footer row">
-              <div id="email" class="centered">
+              <div id="email" class="col-12 centered">
                 <a href="mailto:hello@blakegrotewold.com">{{ site.author.email }}</a>
               </div> 
               <br>
@@ -63,7 +58,9 @@
 
 
         </div> <!-- /container -->
+
         <script src="/assets/js/vendor/jquery-1.10.2.min.js" rel="javascript"></script>
+        <script src="/assets/js/vendor/bootstrap.min.js" rel="javascript"></script>
         <script src="/assets/js/grotr.js" rel="javascript"></script>
     </body>
 </html>

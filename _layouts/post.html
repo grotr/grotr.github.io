@@ -1,11 +1,15 @@
 ---
 layout: default
 ---
-<div class="col-12">
-	<h2>{{ page.title }}</h2>
-	<p class="meta">{{ page.date | date_to_string }}</p>
-	
-	<div class="post">
-		{{ content }}
-	<div class="post">
+<div class="row">
+	<div class="col-12">
+		<h2>{{ page.title }}</h2>
+		<p class="meta">{{ page.date | date_to_string }}</p>
+		
+		<div class="post">
+			{{ content }}
+		<div class="post">
+	</div>
 </div>
+
+<a href="/" class="back">Back to Home</a>
