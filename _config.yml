@@ -1,4 +1,4 @@
-permalink: /:title/
+permalink: diary/:title/
 
 title: Blake Grotewold
 tagline: Freelance Developer in Mankato, MN
