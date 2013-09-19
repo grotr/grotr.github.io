@@ -103,6 +103,7 @@ display: inline-block;
 ul.posts {
   list-style-type: none;
   margin-bottom: 2em;
+  padding: 0;
 }
 
 ul.posts li {
@@ -124,7 +125,7 @@ ul.posts span {
 .header {
   color: #FFF;
   text-align: left;
-  margin: 40px auto;
+  margin: 15% auto;
   text-shadow: 1px 1px 1px #283237;
   text-align: center
 }
@@ -228,6 +229,7 @@ ul.posts span {
 
 .post ul, .post ol {
   margin-left: 1.35em;
+
 }
 
 .post code {
@@ -286,4 +288,10 @@ ul.posts span {
 
 #logos a {
   text-decoration: none;
+}
+
+@media screen and (min-width: 768px){
+  .posts {
+    text-align: right;
+  }
 }
