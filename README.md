@@ -1,3 +1,3 @@
 grotr.github.io
 ===============
-The portfolio of Blake Grotewold.
+The GitHub portfolio of Blake Grotewold
