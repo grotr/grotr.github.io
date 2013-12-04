@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Python and OSX Mavericks Readline Problems"
-date:   2013-11-14 13:14:38
+date:   2013-12-03 17:04:00
 categories: programming reminder
 ---
 
