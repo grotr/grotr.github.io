@@ -1,3 +1,3 @@
 grotr.github.io
 ===============
-The portfolio/blog/playground of Blake Grotewold
+Landing page for my github pages

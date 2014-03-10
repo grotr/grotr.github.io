@@ -1,291 +1,45 @@
-/*****************************************************************************/
-/*
-/* Common
-/*
-/*****************************************************************************/
-@import url(http://fonts.googleapis.com/css?family=Ubuntu);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html, body {
-  height: 100%;
-}
+@import url(http://fonts.googleapis.com/css?family=Sue+Ellen+Francisco);
 
 body {
-  border-top: 8px solid #649178;
-  background-color: #415055;
-  color: #fff;
-  font-family: "Open Sans", Arial, sans-serif;
-  min-width: 380px;
-}
-
-.me {
-  box-shadow: 0px 0px 0px 10px #649178, 0 5px 25px #000;
-  width: 200px;
-  margin: 0 auto;
-  margin-bottom: 20px;
-}
-
-a, a:visited {
-  color: #5B9ECC;
-}
-
-a [class^="icon-"], a [class*=" icon-"] {
-display: inline-block;
-}
-
-#about {
-  margin-top:25px;
-  text-align: justify;
-}
-
-/*****************************************************************************/
-/*
-/* Navigation
-/*
-/*****************************************************************************/
-
-#navigation {
-  position: fixed;
-  left: 0px;
-  top: 10px;
-  bottom: 0px;
-  vertical-align: top;
-  text-align: left;
-}
-
-.navitem {
-  font-size: 20px;
-  color: white;
-  margin: 10px;
-  padding: 5px 0px;
-  overflow: hidden;
-  white-space:nowrap;
-  list-style-type: none;
-}
-
-.navitem:hover {
-  text-shadow: 0 0 1px white;
-}
-
-#navbar {
-  width: 50px;
-  overflow: hidden;
   padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
-#navbar a {
-  text-decoration: none;
-}
-
-.navitem i[class^="icon"] {
-  display: inline-block;
-  width: 30px;
+.the-whole-thing {
+  position: absolute;
+  width: 100%;
+  top: 25%;
   text-align: center;
 }
 
-
-/*****************************************************************************/
-/*
-/* Home
-/*
-/*****************************************************************************/
-ul.posts {
-  list-style-type: none;
-  margin-bottom: 2em;
-  padding: 0;
+.who-am-i {
+  font-family: 'Sue Ellen Francisco', cursive;
+  font-size: 72px;
+  color: DimGray;
 }
 
-ul.posts li {
-  line-height: 1.75em;
+.contacting-me {
+  margin-top: -40px;
+  padding-left: 25px;
 }
 
-ul.posts span {
-  color: #d1d1d1;
-  font-family: Monaco, "Courier New", monospace;
-  font-size: 80%;
+.contacting-me a, .contacting-me a:visited {
+  color: DimGray;
+  font-size: 24px;
+  padding: 0 0px;
 }
 
-/*****************************************************************************/
-/*
-/* Site
-/*
-/*****************************************************************************/
-
-.header {
-  color: #FFF;
-  text-align: left;
-  margin: 15% auto;
-  text-shadow: 1px 1px 1px #283237;
-  text-align: center
+.contacting-me a:hover {
+  color: rgb(153,51,102);
 }
 
-.tagline {
-  display: block;
-  color: #649178;
+.who-am-i.js, .contacting-me.js a {
+  color: Whitesmoke;
 }
 
-.header a {
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.header h1.title {
-  display: block;
-  margin:0;
-}
-
-.header h1.title a {
-  font-family: Ubuntu, sans-serif;
-  font-size: 50px;
-  color: #C34650;
-}
-
-.header h1.title a:hover {
-  color: #ffb400;
-}
-
-.header a.extra {
-  color: #5B9ECC;
-  margin-left: 1em;
-}
-
-.header a.extra:hover {
-  color: #000;
-}
-
-.meta {
-  color: #aaa;
-}
-
-.footer {
-  font-size: 80%;
-  color: #fff;
-  margin-top: 2em;
-  overflow: hidden;
-  bottom: 0;
-  position: relative;
-}
-
-.footer .contact {
-  float: left;
-  margin-right: 3em;
-}
-
-.footer .contact a {
-  color: #5B9ECC;
-}
-
-.footer .rss {
-  margin-top: 1.1em;
-  margin-right: -.2em;
-  float: right;
-}
-
-.footer .rss img {
-  border: 0;
-}
-
-/*****************************************************************************/
-/*
-/* Posts
-/*
-/*****************************************************************************/
-
-/* standard */
-
-#posts {
-    text-align: center;
-    font-size: 12px;
-}
-
-#posts h1{
-  font-family: Garamond, serif;
-}
-
-.sections {
-  margin: -10px 0 10px 0;
-}
-
-.post {
-  text-align: justify;
-}
-
-.post pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .4em;
-}
-
-.post ul, .post ol {
-  margin-left: 1.35em;
-
-}
-
-.post code {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .2em;
-}
-
-.post pre code {
-  border: none;
-}
-
-/* terminal */
-.post pre.terminal {
-  border: 1px solid #000;
-  background-color: #333;
-  color: #FFF;
-}
-
-.post pre.terminal code {
-  background-color: #333;
-}
-
-.back {
-  display: inline-block;
-  padding-top: 20px;
-  font-weight: bold;
-}
-
-.row {
-  padding: 0 25px;
-}
-
-.footer {
-  padding-top:30px;
-  text-align: center;
-  text-shadow:1px 1px 2px black;
-}
-
-#email a {
-  font-size: 22px;
-  color: #c1cccc;
-}
-
-.logo {
-  color: #fff;
-  font-size: 30px;
-  padding: 5px 12px;
-  width:60px;
-  line-height: 40px;
-}
-
-.logo:hover {
-  background-color: rgba(0,0,0,.33);
-}
-
-#logos a {
-  text-decoration: none;
-}
-
-@media screen and (min-width: 768px){
-  .posts {
-    text-align: right;
-  }
+.contacting-me.js a:hover {
+  color: rgba(255,255,255,.5);
 }
