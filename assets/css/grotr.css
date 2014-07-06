@@ -20,8 +20,8 @@ body {
   font-family: 'Sue Ellen Francisco', cursive;
   font-size: 72px;
   color: DimGray;
-  margin-top: 66px;
-  margin-left: 36px;
+  margin-top: -66px;
+  margin-left: -36px;
 }
 
 .contacting-me {
