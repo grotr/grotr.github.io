@@ -1,0 +1,23 @@
+# Site settings
+title: "Blake Grotewold"
+author:
+    name: "Blake Grotewold"
+    email: hello@grotewold.me
+    url: "http://grotewold.me"
+    location: "39.167113, -86.534240"
+    avatar: "/assets/avatar.jpeg"
+    github: skj3gg
+    twitter: skj3gg
+description: "Developer, Academic, Humanist"
+baseurl: ""
+url: "http://grotewold.me"
+permalink: none
+timezone: America/Indiana/Indianapolis
+
+# Build settings
+markdown: kramdown
+sass:
+    sass_dir: assets
+    style: :compressed
+
+exclude: [vendor]

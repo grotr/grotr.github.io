@@ -1,0 +1,6 @@
+---
+layout: page
+permalink: /404.html
+---
+
+You seem to be lost friend! You should probably just head [home]({{ site.url }})...
