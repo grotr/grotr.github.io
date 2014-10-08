@@ -2,12 +2,17 @@
 ---
 @import url(http://fonts.googleapis.com/css?family=Sue+Ellen+Francisco)
 
+$background-color:  #2F2B2F
+$font-stack: 'Sue Ellen Francisco', cursive
+$font-color: Whitesmoke
+$hover-color: #728898
+
 *
 	margin: 0
 	padding: 0
 
 body
-	background-color: #2F2B2F
+	background-color: $background-color
 
 .video-frame
 	position: fixed
@@ -24,9 +29,9 @@ body
 	text-shadow: -2px 2px rgba(0,0,0,.5)
 
 .who-am-i
-	font-family: 'Sue Ellen Francisco', cursive
+	font-family: $font-stack
 	font-size: 72px
-	color: Whitesmoke
+	color: $font-color
 	margin-left: -36px
 
 .contacting-me
@@ -35,20 +40,20 @@ body
 
 .contacting-me a,
 .contacting-me a:visited
-	color: Whitesmoke
+	color: $font-color
 	font-size: 24px
 	padding: 0 0px
 
-.contacting-me a:hover
-	color: #728898
-
-.who-am-i.js,
-.contacting-me.js a
-	color: Whitesmoke
-
-.contacting-me.js a:hover
-	color: #728898
+	&:hover
+		color: $hover-color
 
 .error
-	color: Whitesmoke
+	color: $font-color
 	text-align: center
+
+.error a
+	color: $font-color
+	text-decoration: underline
+	
+	&:hover
+		color: $hover-color
