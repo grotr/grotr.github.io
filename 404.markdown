@@ -1,6 +1,0 @@
----
-layout: base
-permalink: /404.html
----
-
-<h1 class="error">You seem to be lost friend! You should probably just head [home]({{ site.url }})...</h1>
