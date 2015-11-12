@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Amazing Scramble</title>
+		<link href="./css/scrambler.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="content">
+			<button class="help-button" onclick="getHelp()">i</button>
+ 			<div id="cardSlots"></div>
+  			<div id="cardPile"></div>
+			<button class="check-button" onclick="checkAnswer()">Check Your Answer</button>
+
+  			<div id="successMessage">
+    			<h2>You did it! Task Complete.</h2>
+    			<button onclick="init()">Play Again</button>
+  			</div>
+		</div>
+
+		<div class="modal hide">
+			<div class="header">
+			</div>
+			<div class="body">
+				<label>Instructions</label>
+				<span>Match the archway using these pictures. There is only one right way. No phones. No writing. Only brain power. You are free to leave and return to complete.</span>
+				<button onclick="closeHelp()">Close</button>
+			</div>
+		</div>
+
+		<script src="./js/jquery.js"></script>
+		<script src="./js/jquery-ui.min.js"></script>
+		<script src="./js/scrambler.js"></script>
+	</body>
+</html>

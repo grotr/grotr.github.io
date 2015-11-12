@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>1995</title>
+		<style>
+			body {
+				background: #000;
+				margin: 0;
+				padding: 0;
+			}
+			.full-screen {
+				width:100%;
+				height: 100%;
+			}
+			div {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				display: table-cell;
+				vertical-align: middle;
+				text-align: center;
+				font-size: 100px;
+				color: yellow;
+				top: 40%;
+
+      			animation: blink 1s steps(5, start) infinite;
+      			-webkit-animation: blink 1s steps(5, start) infinite;
+    		}
+    		@keyframes blink {
+      			to {
+        			visibility: hidden;
+      			}
+    		}
+    		@-webkit-keyframes blink {
+      			to {
+        			visibility: hidden;
+      			}
+    		}
+		</style>
+	</head>
+	<body class="full-screen">
+		<canvas id='display' class="full-screen"/>
+
+		<script src="assets/js/utils.js"></script>
+		<script src="assets/js/map.js"></script>
+		<script src="assets/js/player.js"></script>
+		<script src="assets/js/camera.js"></script>
+		<script src="assets/js/game.js"></script>
+	</body>
+</html>

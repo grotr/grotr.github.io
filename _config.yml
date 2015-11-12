@@ -7,11 +7,11 @@ author:
     location: "39.167113, -86.534240"
     avatar: "/assets/avatar.png"
     github: grotewold
-    instagram: grotewold
+    instagram: bgrotewold
     twitter: _grotewold
 description: "Developer, Academic, Humanist"
 baseurl: ""
-url: "http://grotewold.me"
+url: "http://localhost:4000"
 permalink: none
 timezone: America/Indiana/Indianapolis
 
