@@ -2,14 +2,15 @@
 title: "Blake Grotewold"
 author:
     name: "Blake Grotewold"
-    email: hello@grotewold.me
+    email: "hello@grotewold.me"
     url: "http://grotewold.me"
     location: "39.167113, -86.534240"
     avatar: "/assets/avatar.png"
-    github: grotewold
-    instagram: bgrotewold
-    twitter: groteworld
-description: "Developer, Academic, Humanist"
+    github: "groteworld"
+    vine: "groteworld"
+    twitter: "groteworld"
+    bitcoin: "18AnsQDidF7zzgNFWQ39NMje1fD6RcKwhH"
+description: "Game Dev, Open Sourcer, Pythonista"
 baseurl: ""
 url: "http://grotewold.me"
 permalink: none
