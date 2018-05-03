@@ -2,8 +2,8 @@
 title: "Blake Grotewold"
 author:
     name: "Blake Grotewold"
-    email: "hello@grotewold.me"
-    url: "http://grotewold.me"
+    email: "hello@grote.world"
+    url: "https://grote.world"
     location: "39.167113, -86.534240"
     avatar: "/assets/avatar.png"
     github: "groteworld"
@@ -12,7 +12,7 @@ author:
     bitcoin: "18AnsQDidF7zzgNFWQ39NMje1fD6RcKwhH"
 description: "Game Dev, Open Sourcer, Pythonista"
 baseurl: ""
-url: "http://grote.world"
+url: "https://grote.world"
 permalink: none
 timezone: America/Indiana/Indianapolis
 
