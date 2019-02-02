@@ -86,9 +86,46 @@ body {
 .mute-btn {
     font-size: 30px;
     position: fixed;
-    bottom: 10px;
+    top: 10px;
     right: 10px;
     cursor: pointer;
+}
+
+.games-dropdown {
+    position: fixed;
+    bottom: -141px;
+    right: 20px;
+    text-shadow: 0 0 rgba(0,0,0,.5);
+    list-style-type: none;
+    transition: bottom .66s;
+
+    &:hover {
+        bottom: 0
+    }
+
+    .games-title {
+        font-weight: bold;
+        color: $hover-color;
+        font-size: 18px;
+        padding: 5px;
+        border-bottom: 1px solid $hover-color;
+        text-align: right;
+        cursor: default;
+    }
+
+    .game {
+        padding: 5px;
+
+        a {
+            color: $font-color;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+    }
 }
 
 ::selection {

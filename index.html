@@ -11,8 +11,17 @@ title: Blake Grotewold
     <div class="contacting-me">
         <a href="https://twitter.com/{{ site.author.twitter }}"><i class="fa fa-twitter-square"></i></a>
         <a href="https://github.com/{{ site.author.github }}"><i class="fa fa-github-square"></i></a>
-        <a href="https://instagram.com/{{ site.author.vine }}"><i class="fa fa-instagram"></i></a>
+        <a href="https://instagram.com/{{ site.author.instagram }}"><i class="fa fa-instagram"></i></a>
     </div>
+    <div onclick="toggleMute()" id="mute-btn" class="mute-btn">&#x1f507;</div>
+    <ul id="games-dropdown" class="games-dropdown">
+        <li class="games-title">games</li>
+        <li class="game"><a href="games/mighty-mansion-wrestling/">Migthy Mansion Wrestling</a></li>
+        <li class="game"><a href="games/monster-mash/">Monster Mash</a></li>
+        <li class="game"><a href="games/nineteen-ninety-five/">1995</a></li>
+        <li class="game"><a href="games/pandameownium/">PandaMEOWnium</a></li>
+        <li class="game"><a href="games/please-dont-leave-me/">Please don't leave me!</a></li>
+    </ul>
 </div>
-<div onclick="toggleMute()" id="mute-btn" class="mute-btn">&#x1f507;</div>
+
 <script src="{{ "/assets/groteworld.js" | prepend: site.baseurl }}"></script>
