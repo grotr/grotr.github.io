@@ -3,7 +3,7 @@ layout: base
 title: Blake Grotewold
 ---
 <!-- Public Domain video https://vimeo.com/113859233 -->
-<video class="video-frame" autoplay preload="auto" autobuffer muted onended="this.play()">
+<video id="video-frame" class="video-frame" autoplay preload="auto" muted autobuffer onended="this.play()">
     <source src="{{ "/assets/8243936-HD.mp4" | prepend: site.baseurl }}" type="video/mp4">
 </video>
 <div class="the-whole-thing">
@@ -14,3 +14,5 @@ title: Blake Grotewold
         <a href="https://instagram.com/{{ site.author.vine }}"><i class="fa fa-instagram"></i></a>
     </div>
 </div>
+<div onclick="toggleMute()" id="mute-btn" class="mute-btn">&#x1f507;</div>
+<script src="{{ "/assets/groteworld.js" | prepend: site.baseurl }}"></script>
