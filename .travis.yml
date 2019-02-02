@@ -1,8 +1,0 @@
-language: 
-    - ruby
-rvm:
-    - 2.1
-before_script:
-    - gem install jekyll
-script: 
-	- jekyll build
